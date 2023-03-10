@@ -144,6 +144,123 @@
         color: #7f7ff5;
         line-height: 1.5;
       }
+
+      /* new section style */
+      .background{
+    background-color: #edf8fc;
+    padding: 20px 0;
+    margin: 60px 0;
+   }
+   .h1-text h1{
+     color: #03038d;
+     margin: 0 0 20px 0;
+   }
+   .h1-text p{
+    color: #7878f1;
+   }
+ .flexcols{
+  background-color: white;
+  margin: 10px;
+  padding: 30px 25px;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 0px -5px rgba(0,0,0,0.5);
+ }
+
+ .icons{
+  background-color: #f7f2f1;
+  padding: 20px;
+  font-size: 25px;
+  color: orange;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  
+ }
+.flexcols h6{
+  color: #03038d;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.flexcols p{
+  color: #03038d;
+}
+
+.flexcols a{
+  border-bottom: 2px solid orange;
+  padding: 5px 0;
+}
+
+.comp-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+@media (max-width:556px){
+  .d-flex{
+    flex-direction: column;
+  }
+
+  .flexcols{
+    text-align: center;
+    padding: 30px 5px;
+  }
+
+  .comp-img{
+margin-top: 20px;
+}
+/* end of section */
+
+/* start of background image style */
+}
+#background{
+        background-image: url(./smiling\ man.jpeg);
+        background-position:center;
+        background-size: cover;
+        padding: 100px;
+        object-fit: cover;
+      }
+     
+      .content{
+        background-color: white;
+        width: 100%;
+        max-width: 400px;
+        padding: 30px;
+        border-radius: 8px;
+        margin-left: auto;
+      }
+
+      .content p{
+        color: #03038d;
+        font-weight: 600;
+        margin-top: 20px;
+      }
+      
+      .content h5{
+        color: orange;
+        font-weight: 600;
+      }
+      .content .pad{
+        margin-left: 5px;
+      }
+
+      .icon{
+  font-size: 25px;
+  color: orange;
+  
+ }
+
+@media (max-width:768px){
+  #background{
+       padding: 10px;
+      }
+
+           
+      .content{
+        padding: 10px;
+       
+      }
+}
     </style>
     <!-- end of style -->
   </head>
@@ -271,6 +388,8 @@
       <hr>
       <!-- end of header -->
     </section>
+
+    <!-- new section -->
     <div class="section">
       <div class="container">
         <div class="flexible-text text-center wow fadeInDown">
@@ -282,7 +401,7 @@
       </div>
 
       <!-- for flex -->
-      <div class="gap d-md-flex d-block justify-content-center align-items-center mt-5 mb-md-3 mx-3 wow fadeIn" data-wow-delay="1.5s">
+      <div class="gap d-md-flex d-block justify-content-center align-items-center mt-5 mb-md-3 mx-3 wow fadeIn" data-wow-delay="1.1s">
         <div class="mycol">
           <img src="./maria.jpg" alt="" class="maria-img img-fluid">
         </div>
@@ -298,6 +417,70 @@
         </div>
       </div>
     </div>
+    <!-- end of section -->
+    <!-- new section -->
+    <section class="background">
+      <div class="container">
+     <div class="row row-cols-1 row-cols-md-2">
+      <!-- ist col -->
+      <div class="col-md-9 wow fadeIn" data-wow-delay="1.3s">
+        <div class="h1-text">
+          <h1>Improved Digital Experience</h1> 
+          <p>Apply for a business loan today and if approved.you could enjoy the first 8 weeks with <br>
+          no repayments.Get the breathing space now, and we will extend your term at the other <br>
+        end(interest will accrue from settle date to end of term) </p>
+        </div>
+    
+        <!-- for 2nd col -->
+        <div class="d-flex d-block">
+          <div class="flexcols">
+            <i class="fa fa-desktop icons"></i>
+            <h6> -design & development.</h6>
+            <p>  -design better websites.</p>
+            <p>  -we'll extend you term.</p>
+            <p>-get the breathing space now</p>
+            <a href="#">learn more</a>
+          </div>
+      
+          <div class="flexcols">
+            <i class="fa fa-bullhorn icons"></i>
+            <h6> -design & development.</h6>
+            <p>  -design better websites.</p>
+            <p>  -we'll extend you term.</p>
+            <p>-get the breathing space now</p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+        <!-- end of  2nd col -->
+        <!-- end of col -->
+      </div>
+      <!-- second col -->
+      <div class="col-md-3 wow fadeIn" data-wow-delay="1.5s">
+        <img src="./pics folder/half pc.jpeg" alt="" class="comp-img mt-sm-2">
+      </div>
+     </div>
+      </div>
+    </section>
+
+    <!-- back ground image section -->
+    <section>
+      <div class="container-fluid">
+        <div id="background">
+          <div class="content">
+            <i class="fa fa-comment-o icon"></i>
+            <p>"I love that i was able to open a cafe <br>
+            and transform it into a place that <br>
+            makes people happy.A small <br>
+            business loan from prospa was a big part of making that possible."</p>
+    
+            <h5>-Barb Dwayer</h5>
+            <p class="pad">Ceo Of Victor</p>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+<!-- end  -->
 
     <script src="./bootstrap-4.6.2-dist/jquery-3.6.0.min.js"></script>
     <script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
