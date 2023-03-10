@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./animate/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <title>my template assignment</title>
+    <!-- for style -->
+    <style>
+      /* for image */
+      .myimg {
+        height: 40px;
+      }
+      /* end */
+
+      /* for button */
+      .navbar .btn {
+        padding: 0.9rem 1.2rem;
+        font-size: 1rem;
+        color: orange;
+        background-color: white;
+        font-weight: 600;
+      }
+      /* for navbar */
+      .navbar {
+        background-color: #000064;
+      }
+      .navbar-dark .navbar-nav .nav-link {
+        color: white;
+        text-transform: capitalize;
+        font-weight: 600;
+        padding: 0 1rem;
+      }
+      /* media query for navbar-collapse*/
+      @media (max-width: 766px) {
+        .navbar-collapse {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background-color: orange;
+          z-index: 2;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+          text-align: center;
+          font-weight: 700;
+          font-size: 1.2;
+          padding: 1rem 0;
+
+        }
+      }
+      /* end of media query */
+      
+      /* for header */
+      header {
+        background-color: #000064;
+      }
+      /* for image */
+      header .image {
+        height: 100%;
+        width: 480px;
+        object-fit: cover;      
+      }
+      /* for h1 */
+      .col h1 {
+        color: white;
+        text-transform: capitalize;
+        font-size: 2.8rem;
+        font-weight: 600;
+        font-family: sans-serif;
+      }
+      .col p {
+        color: white;
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 10px 0 20px;
+      }
+
+      .col .btn {
+        padding: 0.5rem 1.9rem;
+        font-size: 1rem;
+        color:white;
+        background-color:orange;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+/* for section1 */
+      .text h1{
+      color: #000064;
+      font-size: 20px;
+      }
+
+      .text p{
+        font-size: 15px;
+        /* color: #000064; */
+        color: #7f7ff5;
+      }
+      section .image{
+        height: 140px;
+        width: 140px;
+        object-fit: cover;
+      }
+/* for section2 */
+      .maria-img{
+        height: 380px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+
+      .mycol a{
+        display: block;
+        border-bottom: 1px solid #d4d2d2;
+      padding: 15px 10px;
+      font-size: 18px;
+      color: navy;
+      }
+
+      .mycol i{
+        color: orange;
+        width: 25px;
+        display: inline-block;
+      }
+
+      .mycol p{
+        padding: 10px 0 10px 30px;
+      }
+
+
+      .gap{
+        gap: 80px;
+      }
+      .flexible-text h1{
+        color: #000064;
+      }
+      .flexible-text p{
+        color: #7f7ff5;
+        line-height: 1.5;
+      }
+    </style>
+    <!-- end of style -->
+  </head>
+  <body>
+    <!-- for navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark position-relative">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#"
+        ><img src="./victor.png" alt="" class="myimg"
+      /></a>
+
+      <!-- Toggler/collapsibe Button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+        </ul>
+        <!-- for button -->
+        <button
+          class="btn btn-warning ml-auto border-0 text-capitalize d-md-inline-block d-none "
+        >
+          get free consultant
+        </button>
+      </div>
+    </nav>
+    <!-- end of navigation -->
+    <!-- header section -->
+    <header class="pt-4">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col my-4 text-center wow fadeInLeft" data-wow-delay="1s">
+            <h1>
+              get the help <br />
+              you need every <br />
+              step of the way
+            </h1>
+            <p>
+              design better websites and <br />
+              spend less with essentials
+            </p>
+            <button class="btn btn-warning">get started</button>
+          </div>
+          <div class="col wow fadeInLeft" data-wow-delay="0.5s">
+            <img
+              src="./pics folder/man on phone using a computer.jpeg"
+              alt=""
+              class="image img-fluid rounded d-md-block d-none pb-4"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+    <section>
+      <div class="container-lg my-5">
+        <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2">
+          <!-- ist col -->
+          <div class="col d-flex mb-0 mb-3 wow fadeInUp" data-wow-delay="1.5s">
+            <img src="./afro lady on pc.jpeg" alt="image" class="image rounded-circle">
+          <!-- text div -->
+            <div class="text my-auto ml-3">
+              <h1>happier customer</h1>
+              <p>
+                design better websites and 
+                spend less with essentials
+              </p>
+            </div>
+          </div>
+          <!-- end of ist col -->
+
+          <!-- 2nd col -->
+          <div class="col d-flex mb-0 mb-3 wow fadeInUp" data-wow-delay="2s">
+            <img src="./blonde typing.jpeg" alt="image" class="image rounded-circle">
+          <!-- text div -->
+            <div class="text text my-auto ml-3">
+              <h1>fastest growth</h1>
+              <p>
+                design better websites and 
+                spend less with essentials
+              </p>
+            </div>
+          </div>
+          <!-- end of 2nd col -->
+          <!-- 3rd col -->
+          <div class="col d-flex mb-0 mb-3 wow fadeInUp" data-wow-delay="2.5s">
+            <img src="./pics folder/man smiling while folding hands.jpeg" alt="image" class="image rounded-circle" >
+          <!-- text div -->
+            <div class="text text my-auto ml-3">
+              <h1>connected workflow</h1>
+              <p>
+                design better websites and
+                spend less with essentials
+              </p>
+            </div>
+          </div>
+         <!-- end of 3rd col -->
+        </div>
+      </div>
+      <hr>
+      <!-- end of header -->
+    </section>
+    <div class="section">
+      <div class="container">
+        <div class="flexible-text text-center wow fadeInDown">
+          <h1>Flexible support to suit your business <br> needs</h1>
+          <p>Apply for a business loan today and if approved,you could enjoy the first 8 weeks with no <br>
+         repayments.Get the breathing space,and we'll extend your term at the other end(interest will <br>
+          accrue from the settlement date to the end of term).</p>
+        </div>
+      </div>
+
+      <!-- for flex -->
+      <div class="gap d-md-flex d-block justify-content-center align-items-center mt-5 mb-md-3 mx-3 wow fadeIn" data-wow-delay="1.5s">
+        <div class="mycol">
+          <img src="./maria.jpg" alt="" class="maria-img img-fluid">
+        </div>
+      
+          <div class="mycol">
+            <a href="#"><i class="fa fa-plus"></i>starts the automated process</a>
+            <a href="#" class="exception"><i class="fa fa-plus"></i>the automated process starts</a>
+            <p>the automated process starts as soon as your <br>
+              clothes go into the machine </p>
+              <a href="#"><i class="fa fa-plus"></i>automated process starts</a>
+              <a href="#"><i class="fa fa-plus"></i>process the automated magic</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./bootstrap-4.6.2-dist/jquery-3.6.0.min.js"></script>
+    <script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./wow/wow.min.js"></script>
+    <!-- script -->
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
