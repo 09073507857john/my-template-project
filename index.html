@@ -84,12 +84,13 @@
       }
 
       .col .btn {
-        padding: 0.5rem 1.9rem;
+        padding: 0.9rem 2.5rem;
         font-size: 1rem;
         color:white;
         background-color:orange;
         font-weight: 600;
         text-transform: capitalize;
+        font-size: 18px;
       }
 /* for section1 */
       .text h1{
@@ -156,7 +157,7 @@
      margin: 0 0 20px 0;
    }
    .h1-text p{
-    color: #7878f1;
+    color: #03038d
    }
  .flexcols{
   background-color: white;
@@ -188,6 +189,7 @@
 .flexcols a{
   border-bottom: 2px solid orange;
   padding: 5px 0;
+  color: orange;
 }
 
 .comp-img{
@@ -309,6 +311,45 @@ margin-top: 20px;
 }
 }
 /* end of style for carousel */
+/* style for last section */
+.diff{
+  padding-top: 5rem;
+  padding-left: 10rem;
+}
+.first h1{
+    color: #000080;
+  }
+  .first p{
+    color: #000080;
+    padding: 15px 0 10px;
+  }
+
+  .first .btn{
+    padding: 0.9rem 2.5rem;
+        font-size: 1rem;
+        color:white;
+        background-color:orange;
+        font-weight: 600;
+        text-transform: capitalize;
+        font-size: 18px;
+  }
+  .final-img{
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    min-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  @media (max-width:992px){
+    .first h1{
+    font-size: 37px;
+  }
+  .diff{
+  padding-left: 1rem;
+}
+  }
+  /* end of style */
     </style>
     <!-- end of style -->
   </head>
@@ -612,10 +653,35 @@ margin-top: 20px;
         <span class="sr-only">Next</span>
       </button>
     </div>
-
     <!-- end of carousel -->
   </div>
  </section>
+ <!-- beginning of d last section -->
+     <!-- beginning of last section -->
+     <section class="diff">
+      <div class="container">
+       <div class="row row-cols-1 row-cols-lg-2">
+          <!-- ist col -->
+         <div class="col first pt-4 wow fadeInLeft">
+          <h1>professionals who work to
+            help with your business.</h1>
+            <p>Apply for a business loan today and if approved,you could enjoy <br> 
+              the first 8 weeks with no repayments.Get the breathing space,<br>
+              and we'll extend your term at the other end(interest will <br>
+               accrue from the settlement date to the end of term).</p>
+
+               <button class="btn btn-warning mb-md-o mb-4">Get Started</button>
+         </div>
+
+         <!-- 2nd col -->
+         <div class="col wow fadeInLeft">
+          <img src="./pics folder/business-man-working-computer-office-181815217.jpg" alt="" class="final-img ">
+         </div>
+          
+        </div>
+      </div>
+    </section>
+ <!-- end of last section -->
 
     <script src="./bootstrap-4.6.2-dist/jquery-3.6.0.min.js"></script>
     <script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
