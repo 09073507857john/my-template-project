@@ -13,6 +13,11 @@
     <title>my template assignment</title>
     <!-- for style -->
     <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       /* for image */
       .myimg {
         height: 40px;
@@ -139,10 +144,10 @@
         gap: 80px;
       }
       .flexible-text h1{
-        color: #000064;
+        color: navy;
       }
       .flexible-text p{
-        color: #7f7ff5;
+        color:navy;
         line-height: 1.5;
       }
 
@@ -270,7 +275,7 @@ margin-top: 20px;
       } 
 
       .text-color p{
-        color: #5f5ff5;
+        color:navy;
         font-weight: 500;
       }
 
@@ -280,12 +285,14 @@ margin-top: 20px;
       }
 
       .text-style h5{
-        color: #03038d;
+        color:navy;
         font-weight: 700;
       }
     .text-style p{
-      color: #5f5ff5;
+      color: navy;
       font-weight: 500;
+      font-size: 18px;
+      padding: 10px 0 10px 0;
     }
     
 
@@ -349,9 +356,78 @@ margin-top: 20px;
   padding-left: 1rem;
 }
   }
+
+  /* end of last section */
+
+  footer{
+   background-color: navy;
+   padding: 35px 70px;
+   margin-top: 50px;
+}
+
+.mylogoimg{
+   height: 40px;
+   margin-bottom: 15px;
+}
+
+
+.mylinks a{
+display: block;
+padding: 5px 0;
+font-size: 15px;
+color: #89898a;
+text-transform: capitalize;
+font-weight: 600;
+}
+
+footer :first-child .child-col{
+   padding-right: 50px;
+}
+
+footer h5{
+   margin-bottom: 15px;
+   color: white;
+   font-weight: 500;
+   text-transform: capitalize;
+   font-size: 15px;
+}
+
+.short-text p{
+   font-size: 15px;
+   color: #89898a;
+   font-weight: 600;
+}
+
+.contact p{
+   font-size: 15px;
+   color: #89898a;
+   font-weight: 600;
+}
+
+ footer .number{
+   color: orange;
+   font-size: 25px;
+}
+
+footer .social-media i{
+   border: 1px solid #89898a;
+ border-radius: 50%;
+ padding: 5px 5px;
+ color: #89898a;
+}
+
+footer .social-media{
+   display:flex;
+   gap: 10px;
+
+}
+
+.last-para{
+  color:#b9b9bd;
+  margin-top: 70px;
+}
   /* end of style */
     </style>
-    <!-- end of style -->
   </head>
   <body>
     <!-- for navigation -->
@@ -581,7 +657,7 @@ margin-top: 20px;
 
     <!-- start of carousel -->
    
-    <div id="carouselExampleCaptions" class="carousel slide w-100 mx-auto" data-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide w-100 mx-auto my-5" data-ride="carousel">
       <div class="carousel-inner rounded">
         <!-- ist carousel item -->
         <div class="carousel-item active">
@@ -594,7 +670,7 @@ margin-top: 20px;
           <div class="col">
            <div class="text-style pt-3">
             <h5>Essentials helped us to increase <br> our revenue by more. </h5>
-            <p>The automated process starts as soon as your <br>
+            <p>The automated process starts as soon as your 
               clothes go into the machine 
             </p>
             <a href="#" class="links">View More</a>
@@ -614,7 +690,7 @@ margin-top: 20px;
             <div class="col">
              <div class="text-style pt-3">
               <h5>Essentials helped us to increase <br> our revenue by more. </h5>
-              <p>The automated process starts as soon as your <br>
+              <p>The automated process starts as soon as your 
                 clothes go into the machine 
               </p>
               <a href="#" class="links">View More</a>
@@ -634,7 +710,7 @@ margin-top: 20px;
             <div class="col">
              <div class="text-style pt-3">
               <h5>Essentials helped us to increase <br> our revenue by more. </h5>
-              <p>The automated process starts as soon as your <br>
+              <p>The automated process starts as soon as your 
                 clothes go into the machine 
               </p>
               <a href="#" class="links">View More</a>
@@ -682,6 +758,65 @@ margin-top: 20px;
       </div>
     </section>
  <!-- end of last section -->
+ <!-- beginning of footer -->
+ <footer>
+  <div class="container-md">
+    <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4">
+      <!-- ist col -->
+      <div class="child-col col">
+       <img src="./victor.png" alt="" class="mylogoimg">
+
+       <div class="short-text">
+        <p>Get the breathing space now, and 
+          we'll extend your term at the other 
+          end
+        </p>
+
+        <div class="social-media">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-youtube"></i>
+      </div>
+       </div>
+      </div>
+
+      <!-- 2nd col -->
+      <div class="col">
+        <h5 class="mt-md-0 mt-4">services</h5>
+        <div class="mylinks">
+          <a href="#">design & strategy</a>
+          <a href="#">product design</a>
+          <a href="#">digital marketing</a>
+          <a href="#">software <br> development</a>
+          <a href="#">ecommerce</a>
+        </div>
+      </div>
+
+      <!-- 3rd col -->
+      <div class="col">
+        <h5 class="mt-md-0 mt-4">navigation</h5>
+        <div class="mylinks">
+          <a href="#">design & strategy</a>
+          <a href="#">product design</a>
+          <a href="#">digital marketing</a>
+          <a href="#">software <br> development</a>
+          <a href="#">ecommerce</a>
+        </div>
+      </div>
+
+      <!-- 4th col -->
+      <div class=" contact col">
+        <h5 class="mt-md-0 mt-4">contact us</h5>
+        <p>consulto98@gmail.com</p>
+        <p>76/A,Green road,NYC</p>
+        <P class="number">(80)783 367-3904</P>
+      </div>
+    </div>
+  </div>
+  <p class=" last-para text-center">copyright &copy; 2023 all rights reserved.| This template was made with ❤️ by <span>valentino</span></p>
+</footer>
+ <!-- end of footer -->
 
     <script src="./bootstrap-4.6.2-dist/jquery-3.6.0.min.js"></script>
     <script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
